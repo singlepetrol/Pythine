@@ -1,7 +1,8 @@
+import time
 
 import requests
-from pythine import Pythine
-import time
+
+from Pythine.pythine import Pythine
 
 __author__ = 'zhengxu'
 
@@ -12,7 +13,7 @@ def slow_network(url, timeout=1):
 
 
 def benchmark_slow_network(test_time):
-    url = 'http://www.baidu.com/'
+    url = 'http://www.beibei.com'
     t0 = time.time()
     for _ in range(test_time):
         slow_network(url)

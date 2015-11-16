@@ -1,18 +1,18 @@
-
-import requests
-from pythine import ThreadFunctionEngine
 import time
+import requests
+
+from Pythine import Pythine
 
 
 def _slow_network(url):
     return requests.get(url).text
 
 
-slow_network = ThreadFunctionEngine(_slow_network, 8)
+slow_network = Pythine(_slow_network, 8)
 
 
 def time_slow_network(test_time):
-    url = 'http://www.baidu.com/'
+    url = 'http://www.beibei.com/'
     t0 = time.time()
     for _ in range(test_time):
         _slow_network(url)
@@ -26,5 +26,5 @@ def time_slow_network(test_time):
     pass
 
 if __name__ == '__main__':
-    time_slow_network(30)
+    time_slow_network(8)
 

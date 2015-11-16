@@ -1,6 +1,5 @@
 import threading
 from itertools import izip
-import time
 
 __author = 'zhengxu'
 
