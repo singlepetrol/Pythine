@@ -23,11 +23,14 @@ The `slow_network` function will be automatically paralleled in `5` threads.
 
 Run in your bash
 ```bash
-pip install Pythine
+sudo pip install Pythine
 ```
 And it's enough to get Pythine in your box.
 
-
+Before using `pip`, you need to install
+```bash
+sudo apt-get install python-pip
+```
 
 ## FAQ
 
