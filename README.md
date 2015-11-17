@@ -27,7 +27,7 @@ sudo pip install Pythine
 ```
 And it's enough to get Pythine in your box.
 
-Before using `pip`, you need to install
+Before using `pip`, you may need to install
 ```bash
 sudo apt-get install python-pip
 ```
